@@ -204,7 +204,7 @@ Avisos:
 - **Entrada executada:**
   - `python -m src.main --objetivo "Aprender Inglês para conversação" --nivel intermediário --horas`
 
-- **Comportamento esperado:**
+- **Saída esperada:**
   - O CLI deve sinalizar erro e indicar que o argumento `--horas` precisa de um valor, porque o campo é obrigatório.
 
 - **Saída obtida:**
@@ -214,6 +214,32 @@ Avisos:
 
 
 - **Resultado:** Sucesso (comportamento correto de validação de argumento ausente)
+
+#### Teste 3 (execução de testes automatizados)
+
+- **Entrada executada:**
+  - `python -m pytest tests/ -v`
+
+- **Saída esperada:**
+  - Os testes devem passar sem erros, confirmando a funcionalidade de carga de KB, retriever e validação de schema.
+
+- **Saída obtida:**
+  ```text
+  ================================================================================ test session starts ================================================================================
+  platform win32 -- Python 3.13.1, pytest-9.0.2, pluggy-1.6.0 -- C:\path\to\project\.venv\Scripts\python.exe
+  cachedir: .pytest_cache
+  rootdir: C:\path\to\project
+  plugins: anyio-4.13.0
+  collected 3 items
+
+  tests/test_retrieval.py::test_kb_nao_vazia PASSED                                                                                                                               [ 33%]
+  tests/test_retrieval.py::test_retriever_ranqueia_repeticao PASSED                                                                                                               [ 66%]
+  tests/test_schemas.py::test_schema_aceita_saida_minima PASSED                                                                                                                   [100%]
+
+  =============================================================================== 3 passed in 1.71s ===============================================================================
+  ```
+
+- **Resultado:** Sucesso (todos os testes passaram, confirmando funcionalidade de KB, retriever e schema)
 
 ### 5.3 Análise dos resultados
 
