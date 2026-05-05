@@ -50,7 +50,28 @@ Webhook → Validar entrada → (Paralelo) Gemini triagem | Ler FAQ Sheets
 
 ### 3.2 Evidências visuais do fluxo
 
+As evidências visuais do fluxo completo estão documentadas em [docs/evidence/](docs/evidence/):
 
+1. [Webhook — Configuração](docs/evidence/B-01-webhook-configuracao.png)
+2. [Normalize Input — Output](docs/evidence/B-02-normalize-input-output.png)
+3. [Input válido? — If Branch (True)](docs/evidence/B-03-input-valido-if-branch-true.png)
+4. [Gemini Triagem — Request/Response](docs/evidence/B-04-gemini-triagem-request-response.png)
+5. [Parse Triagem — JSON estruturado](docs/evidence/B-05-parse-triagem-json-estruturado.png)
+6. [Ler FAQ Sheet — Output](docs/evidence/B-06-ler-faq-sheet-output.png)
+7. [FAQ para Texto — Output](docs/evidence/B-07-faq-para-texto-output.png)
+8. [Merge Triagem e FAQ — Output](docs/evidence/B-08-merge-triagem-faq-output.png)
+9. [Juntar Campos — Output](docs/evidence/B-09-juntar-campos-output.png)
+10. [Gemini Com FAQ — Request/Response](docs/evidence/B-10-gemini-com-faq-request-response.png)
+11. [Parse Resposta Final — Rota](docs/evidence/B-11-parse-resposta-final-rota.png)
+12. [Switch Rota — Branch](docs/evidence/B-12-switch-rota-branch.png)
+13. [Sheets Log Tickets — Append OK](docs/evidence/B-13-sheets-log-tickets-append-ok.png)
+14. [Respond OK — Output](docs/evidence/B-14-respond-ok-output.png)
+15. [Execution Completa — Sucesso](docs/evidence/B-15-execution-completa-sucesso.png)
+16. [PowerShell — Resposta Webhook](docs/evidence/B-16-powershell-resposta-webhook.png)
+17. [Google Sheets — Linha gerada](docs/evidence/B-17-google-sheets-linha-gerada.png)
+18. [Caso Inválido — Execution Completa](docs/evidence/B-18-caso-invalido-execution-completa-invalida.png)
+19. [Caso Inválido — Respond Erro Validação](docs/evidence/B-19-caso-invalido-respond-erro-validacao.png)
+20. [PowerShell — Caso Inválido Resposta](docs/evidence/B-20-powershell-caso-invalido-respond-erro-validacao.png)
 
 ## 4. Papel do Agente de IA
 
@@ -86,6 +107,9 @@ Cada execução bem-sucedida deve adicionar linha em `Tickets` com timestamp, me
 
 Evidências associadas:
 
+- `docs/evidence/B-13-sheets-log-tickets-append-ok.png`
+- `docs/evidence/B-17-google-sheets-linha-gerada.png`
+
 ---
 
 ## 8. Tratamento de Erros e Limites
@@ -96,6 +120,8 @@ Evidências associadas:
 
 Evidências associadas:
 
+- [Caso inválido — Respond Erro Validação](docs/evidence/B-19-caso-invalido-respond-erro-validacao.png)
+- [PowerShell — Caso Inválido Resposta](docs/evidence/B-20-powershell-caso-invalido-respond-erro-validacao.png)
 
 ---
 
