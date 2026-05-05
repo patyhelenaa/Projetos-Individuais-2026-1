@@ -39,70 +39,70 @@ Automação no **n8n** que recebe chamados via **Webhook**, classifica com **Goo
 
 | Teste | Descrição                            | Resultado    | Evidências                                                                                                                                                                                       |
 | ----- | ------------------------------------ | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| T1    | Mensagem com indisponibilidade geral | Passou | [B-T1-powershell-resposta.png](docs/evidence/B-T1-powershell-resposta.png), [B-T1-sheets-linha-gerada.png](docs/evidence/B-T1-sheets-linha-gerada.png)                                           |
-| T2    | Mensagem trivial "esqueci a senha"   | Passou | [B-T2-powershell-resposta.png](docs/evidence/B-T2-powershell-resposta.png), [B-T2-sheets-linha-gerada.png](docs/evidence/B-T2-sheets-linha-gerada.png)                                           |
-| T3    | Texto vazio ou muito curto           | Falhou | [B-T3-n8n-respond-erro-validacao.png](docs/evidence/B-T3-n8n-respond-erro-validacao.png), [B-T3-powershell-resposta-invalida.png](docs/evidence/B-T3-powershell-resposta-invalida.png)           |
-| T4    | Corpo JSON inválido                  | Falhou | [B-T4-n8n-respond-erro-validacao.png](docs/evidence/B-T4-n8n-respond-erro-validacao.png), [B-T4-powershell-resposta-json-invalido.png](docs/evidence/B-T4-powershell-resposta-json-invalido.png) |
+| T1    | Mensagem com indisponibilidade geral | Passou | [B-T1-powershell-resposta.png](evidence/B-T1-powershell-resposta.png), [B-T1-sheets-linha-gerada.png](evidence/B-T1-sheets-linha-gerada.png)                                           |
+| T2    | Mensagem trivial "esqueci a senha"   | Passou | [B-T2-powershell-resposta.png](evidence/B-T2-powershell-resposta.png), [B-T2-sheets-linha-gerada.png](evidence/B-T2-sheets-linha-gerada.png)                                           |
+| T3    | Texto vazio ou muito curto           | Falhou | [B-T3-n8n-respond-erro-validacao.png](evidence/B-T3-n8n-respond-erro-validacao.png), [B-T3-powershell-resposta-invalida.png](evidence/B-T3-powershell-resposta-invalida.png)           |
+| T4    | Corpo JSON inválido                  | Falhou | [B-T4-n8n-respond-erro-validacao.png](evidence/B-T4-n8n-respond-erro-validacao.png), [B-T4-powershell-resposta-json-invalido.png](evidence/B-T4-powershell-resposta-json-invalido.png) |
 
 ---
 
 ## 4. Evidências de funcionamento
 
-Evidências registradas em `docs/evidence/`:
+Evidências registradas em `evidence/`:
 
 ### Configuração e Setup
 
-- [B-01-webhook-configuracao.png](docs/evidence/B-01-webhook-configuracao.png) - Configuração do webhook
-- [B-02-normalize-input-output.png](docs/evidence/B-02-normalize-input-output.png) - Normalização de entrada
-- [B-03-input-valido-if-branch-true.png](docs/evidence/B-03-input-valido-if-branch-true.png) - Validação de entrada válida
+- [B-01-webhook-configuracao.png](evidence/B-01-webhook-configuracao.png) - Configuração do webhook
+- [B-02-normalize-input-output.png](evidence/B-02-normalize-input-output.png) - Normalização de entrada
+- [B-03-input-valido-if-branch-true.png](evidence/B-03-input-valido-if-branch-true.png) - Validação de entrada válida
 
 ### Triagem com IA (Primeira Chamada)
 
-- [B-04-gemini-triagem-request-response.png](docs/evidence/B-04-gemini-triagem-request-response.png) - Request/Response da triagem
-- [B-05-parse-triagem-json-estruturado.png](docs/evidence/B-05-parse-triagem-json-estruturado.png) - Parse do JSON estruturado
+- [B-04-gemini-triagem-request-response.png](evidence/B-04-gemini-triagem-request-response.png) - Request/Response da triagem
+- [B-05-parse-triagem-json-estruturado.png](evidence/B-05-parse-triagem-json-estruturado.png) - Parse do JSON estruturado
 
 ### Integração com FAQ
 
-- [B-06-ler-faq-sheet-output.png](docs/evidence/B-06-ler-faq-sheet-output.png) - Leitura da planilha FAQ
-- [B-07-faq-para-texto-output.png](docs/evidence/B-07-faq-para-texto-output.png) - Conversão FAQ para texto
-- [B-08-merge-triagem-faq-output.png](docs/evidence/B-08-merge-triagem-faq-output.png) - Merge dos ramos
-- [B-09-juntar-campos-output.png](docs/evidence/B-09-juntar-campos-output.png) - Junção de campos
+- [B-06-ler-faq-sheet-output.png](evidence/B-06-ler-faq-sheet-output.png) - Leitura da planilha FAQ
+- [B-07-faq-para-texto-output.png](evidence/B-07-faq-para-texto-output.png) - Conversão FAQ para texto
+- [B-08-merge-triagem-faq-output.png](evidence/B-08-merge-triagem-faq-output.png) - Merge dos ramos
+- [B-09-juntar-campos-output.png](evidence/B-09-juntar-campos-output.png) - Junção de campos
 
 ### Orientação Contextual (Segunda Chamada IA)
 
-- [B-10-gemini-com-faq-request-response.png](docs/evidence/B-10-gemini-com-faq-request-response.png) - Request/Response com FAQ
-- [B-11-parse-resposta-final-rota.png](docs/evidence/B-11-parse-resposta-final-rota.png) - Parse da resposta final
+- [B-10-gemini-com-faq-request-response.png](evidence/B-10-gemini-com-faq-request-response.png) - Request/Response com FAQ
+- [B-11-parse-resposta-final-rota.png](evidence/B-11-parse-resposta-final-rota.png) - Parse da resposta final
 
 ### Roteamento e Execução
 
-- [B-12-switch-rota-branch.png](docs/evidence/B-12-switch-rota-branch.png) - Switch de rota
-- [B-13-sheets-log-tickets-append-ok.png](docs/evidence/B-13-sheets-log-tickets-append-ok.png) - Append na planilha
-- [B-14-respond-ok-output.png](docs/evidence/B-14-respond-ok-output.png) - Resposta OK
-- [B-15-execution-completa-sucesso.png](docs/evidence/B-15-execution-completa-sucesso.png) - Execução completa
-- [B-16-powershell-resposta-webhook.png](docs/evidence/B-16-powershell-resposta-webhook.png) - Resposta via PowerShell
+- [B-12-switch-rota-branch.png](evidence/B-12-switch-rota-branch.png) - Switch de rota
+- [B-13-sheets-log-tickets-append-ok.png](evidence/B-13-sheets-log-tickets-append-ok.png) - Append na planilha
+- [B-14-respond-ok-output.png](evidence/B-14-respond-ok-output.png) - Resposta OK
+- [B-15-execution-completa-sucesso.png](evidence/B-15-execution-completa-sucesso.png) - Execução completa
+- [B-16-powershell-resposta-webhook.png](evidence/B-16-powershell-resposta-webhook.png) - Resposta via PowerShell
 
 ### Persistência e Auditoria
 
-- [B-17-google-sheets-linha-gerada.png](docs/evidence/B-17-google-sheets-linha-gerada.png) - Linha gerada no Sheets
+- [B-17-google-sheets-linha-gerada.png](evidence/B-17-google-sheets-linha-gerada.png) - Linha gerada no Sheets
 
 ### Tratamento de Erros
 
-- [B-18-caso-invalido-execution-completa-invalida.png](docs/evidence/B-18-caso-invalido-execution-completa-invalida.png) - Execução inválida
-- [B-19-caso-invalido-respond-erro-validacao.png](docs/evidence/B-19-caso-invalido-respond-erro-validacao.png) - Resposta erro validação
-- [B-20-powershell-caso-invalido-respond-erro-validacao.png](docs/evidence/B-20-powershell-caso-invalido-respond-erro-validacao.png) - PowerShell erro validação
+- [B-18-caso-invalido-execution-completa-invalida.png](evidence/B-18-caso-invalido-execution-completa-invalida.png) - Execução inválida
+- [B-19-caso-invalido-respond-erro-validacao.png](evidence/B-19-caso-invalido-respond-erro-validacao.png) - Resposta erro validação
+- [B-20-powershell-caso-invalido-respond-erro-validacao.png](evidence/B-20-powershell-caso-invalido-respond-erro-validacao.png) - PowerShell erro validação
 
 ### Evidências dos Testes
 
 As evidências específicas dos testes executados estão discriminadas na **Seção 3** acima, incluindo os prints:
 
-- [B-T1-powershell-resposta.png](docs/evidence/B-T1-powershell-resposta.png) - Teste T1: Resposta PowerShell
-- [B-T1-sheets-linha-gerada.png](docs/evidence/B-T1-sheets-linha-gerada.png) - Teste T1: Linha gerada no Sheets
-- [B-T2-powershell-resposta.png](docs/evidence/B-T2-powershell-resposta.png) - Teste T2: Resposta PowerShell
-- [B-T2-sheets-linha-gerada.png](docs/evidence/B-T2-sheets-linha-gerada.png) - Teste T2: Linha gerada no Sheets
-- [B-T3-n8n-respond-erro-validacao.png](docs/evidence/B-T3-n8n-respond-erro-validacao.png) - Teste T3: Erro validação n8n
-- [B-T3-powershell-resposta-invalida.png](docs/evidence/B-T3-powershell-resposta-invalida.png) - Teste T3: Resposta inválida PowerShell
-- [B-T4-n8n-respond-erro-validacao.png](docs/evidence/B-T4-n8n-respond-erro-validacao.png) - Teste T4: Erro validação n8n
-- [B-T4-powershell-resposta-json-invalido.png](docs/evidence/B-T4-powershell-resposta-json-invalido.png) - Teste T4: Resposta JSON inválido PowerShell
+- [B-T1-powershell-resposta.png](evidence/B-T1-powershell-resposta.png) - Teste T1: Resposta PowerShell
+- [B-T1-sheets-linha-gerada.png](evidence/B-T1-sheets-linha-gerada.png) - Teste T1: Linha gerada no Sheets
+- [B-T2-powershell-resposta.png](evidence/B-T2-powershell-resposta.png) - Teste T2: Resposta PowerShell
+- [B-T2-sheets-linha-gerada.png](evidence/B-T2-sheets-linha-gerada.png) - Teste T2: Linha gerada no Sheets
+- [B-T3-n8n-respond-erro-validacao.png](evidence/B-T3-n8n-respond-erro-validacao.png) - Teste T3: Erro validação n8n
+- [B-T3-powershell-resposta-invalida.png](evidence/B-T3-powershell-resposta-invalida.png) - Teste T3: Resposta inválida PowerShell
+- [B-T4-n8n-respond-erro-validacao.png](evidence/B-T4-n8n-respond-erro-validacao.png) - Teste T4: Erro validação n8n
+- [B-T4-powershell-resposta-json-invalido.png](evidence/B-T4-powershell-resposta-json-invalido.png) - Teste T4: Resposta JSON inválido PowerShell
 
 ---
 
@@ -158,7 +158,7 @@ As evidências específicas dos testes executados estão discriminadas na **Seç
 - [x] Mission brief atendido
 - [x] Três soluções implementadas/prototipadas
 - [x] Testes executados e documentados
-- [x] Evidências registradas em `docs/evidence/`
+- [x] Evidências registradas em `evidence/`
 - [x] ADR(s) registrado(s) em `docs/adr/`
 - [x] Commits com mensagens claras e racionalidade
 - [x] Código funcional em `src/`

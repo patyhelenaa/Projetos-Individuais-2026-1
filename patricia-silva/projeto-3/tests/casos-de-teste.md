@@ -59,36 +59,27 @@ Legenda de status:
 ## Evidências associadas (preencher)
 
 - Prints da Solução A:
-
-[A-01-powershell-resposta.png](docs/evidence/A-T1-powershell-resposta.png) 
-[A-01-sheets-linha-gerada.png](docs/evidence/A-T1-sheets-linha-gerada.png) 
-
-[A-02-powershell-resposta.png](docs/evidence/A-T2-powershell-resposta.png) 
-[A-02-sheets-linha-gerada.png](docs/evidence/A-T2-sheets-linha-gerada.png) 
-
-[A-03-n8n-respond-erro-validacao.png](docs/evidence/A-T3-n8n-respond-erro-validacao.png) 
-[A-03-powershell-resposta-invalida.png](docs/evidence/A-T3-powershell-resposta-invalida.png)
+  - [A-01-powershell-resposta.png](../docs/evidence/A-01-powershell-resposta.png)
+  - [A-01-sheets-linha-gerada.png](../docs/evidence/A-01-sheets-linha-gerada.png)
+  - [A-02-powershell-resposta.png](../docs/evidence/A-02-powershell-resposta.png)
+  - [A-02-sheets-linha-gerada.png](../docs/evidence/A-02-sheets-linha-gerada.png)
+  - [A-03-n8n-respond-erro-validacao.png](../docs/evidence/A-03-n8n-respond-erro-validacao.png)
+  - [A-03-powershell-resposta-invalida.png](../docs/evidence/A-03-powershell-resposta-invalida.png)
 
 - Prints da Solução B:
-
-[B-01-powershell-resposta.png](docs/evidence/B-T2-powershell-resposta.png) 
-[B-01-sheets-linha-gerada.png](docs/evidence/B-T2-sheets-linha-gerada.png)
-
-[B-02-powershell-resposta.png](docs/evidence/B-T5-powershell-resposta.png) 
-[B-02-sheets-linha-gerada.png](docs/evidence/B-T5-sheets-linha-gerada.png) 
-
-[B-03-n8n-respond-erro-validacao.png](docs/evidence/B-T3-n8n-respond-erro-validacao.png) 
-[B-03-powershell-resposta-invalida.png](docs/evidence/B-T3-powershell-resposta-invalida.png) 
+  - [B-01-powershell-resposta.png](../docs/evidence/B-01-powershell-resposta.png)
+  - [B-01-sheets-linha-gerada.png](../docs/evidence/B-01-sheets-linha-gerada.png)
+  - [B-02-powershell-resposta.png](../docs/evidence/B-02-powershell-resposta.png)
+  - [B-02-sheets-linha-gerada.png](../docs/evidence/B-02-sheets-linha-gerada.png)
+  - [B-03-n8n-respond-erro-validacao.png](../docs/evidence/B-03-n8n-respond-erro-validacao.png)
+  - [B-03-powershell-resposta-invalida.png](../docs/evidence/B-03-powershell-resposta-invalida.png)
 
 - Prints da Solução C:
-
-[C-01-powershell-resposta.png](docs/evidence/C-T1-powershell-resposta.png) 
-[C-01-sheets-linha-gerada.png](docs/evidence/C-T1-sheets-linha-gerada.png) 
-
-[C-02-powershell-resposta.png](docs/evidence/C-T2-powershell-resposta.png) 
-[C-02-sheets-linha-gerada.png](docs/evidence/C-T2-sheets-linha-gerada.png) 
-
-[C-03-n8n-respond-erro-validacao.png](docs/evidence/C-T3-n8n-respond-erro-validacao.png) 
-[C-03-powershell-resposta-invalida.png](docs/evidence/C-T3-powershell-resposta-invalida.png) 
+  - [C-01-powershell-resposta.png](../docs/evidence/C-01-powershell-resposta.png)
+  - [C-01-sheets-linha-gerada.png](../docs/evidence/C-01-sheets-linha-gerada.png)
+  - [C-02-powershell-resposta.png](../docs/evidence/C-02-powershell-resposta.png)
+  - [C-02-sheets-linha-gerada.png](../docs/evidence/C-02-sheets-linha-gerada.png)
+  - [C-03-n8n-respond-erro-validacao.png](../docs/evidence/C-03-n8n-respond-erro-validacao.png)
+  - [C-03-powershell-resposta-invalida.png](../docs/evidence/C-03-powershell-resposta-invalida.png)
 
 ---

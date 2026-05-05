@@ -107,8 +107,8 @@ Cada execução bem-sucedida deve adicionar linha em `Tickets` com timestamp, me
 
 Evidências associadas:
 
-- `docs/evidence/B-13-sheets-log-tickets-append-ok.png`
-- `docs/evidence/B-17-google-sheets-linha-gerada.png`
+- `evidence/B-13-sheets-log-tickets-append-ok.png`
+- `evidence/B-17-google-sheets-linha-gerada.png`
 
 ---
 
