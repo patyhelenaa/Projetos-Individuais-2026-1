@@ -66,7 +66,7 @@ No domínio escolhido (triagem de suporte técnico), a decisão arquitetural pre
 
 ## Decisão
 
-A alternativa escolhida foi a **B** (`workflows/solution-b-faq-sheets.json`).
+A alternativa escolhida foi a **B** (`src/workflows/solution-b-faq-sheets.json`).
 
 ### Fundamentação detalhada
 
@@ -111,8 +111,8 @@ Em resumo, a alternativa B foi escolhida por entregar o melhor compromisso entre
 
 ## Referências
 
-- `workflows/solution-a-prompt-simples.json`
-- `workflows/solution-b-faq-sheets.json`
-- `workflows/solution-c-multietapas.json`
+- `src/workflows/solution-a-prompt-simples.json`
+- `src/workflows/solution-b-faq-sheets.json`
+- `src/workflows/solution-c-multietapas.json`
 - `docs/workflow-runbook.md`
 - `docs/merge-readiness-pack.md`

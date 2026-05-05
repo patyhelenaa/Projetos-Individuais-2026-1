@@ -127,10 +127,10 @@ Evidências associadas:
 
 ## 9. Diferenciais implementados
 
-- [ ] Memória de contexto
-- [x] Multi-step reasoning (solução C; solução B aplica duas etapas de IA com papéis distintos)
-- [x] Integração com base de conhecimento (FAQ no Google Sheets)
-- [ ] Uso de embeddings / busca semântica
+- Memória de contexto
+- Multi-step reasoning (solução C; solução B aplica duas etapas de IA com papéis distintos)
+- Integração com base de conhecimento (FAQ no Google Sheets)
+- Uso de embeddings / busca semântica
 
 Observação: os diferenciais marcados foram implementados e demonstrados nas evidências da solução B (RAG leve) e da solução C (pipeline multi-etapas).
 
@@ -145,7 +145,7 @@ Observação: os diferenciais marcados foram implementados e demonstrados nas ev
 
 ## 11. Como executar
 
-1. Importar no n8n o workflow `workflows/solution-b-faq-sheets.json`.
+1. Importar no n8n o workflow `src/workflows/solution-b-faq-sheets.json`.
 2. Configurar a chave da API Gemini nos nós HTTP (`x-goog-api-key`) e manter o modelo `gemini-2.5-flash`.
 3. Configurar credencial Google Sheets e apontar o mesmo `Document ID` para:
   - leitura da aba `FAQ`;
@@ -173,9 +173,9 @@ Observação: os diferenciais marcados foram implementados e demonstrados nas ev
 
 ## 13. Checklist de entrega
 
-- [x] Workflow exportado do n8n (`workflows/*.json`)
-- [x] Scripts auxiliares / testes manuais (`tests/`)
-- [x] Demonstração do fluxo — evidências em [evidence/](evidence/)
-- [x] Relatório de entrega preenchido
-- [ ] Pull Request aberto (conforme repositório da disciplina)
+- Workflow exportado do n8n (`src/workflows/*.json`)
+- Scripts auxiliares / testes manuais (`tests/`)
+- Demonstração do fluxo — evidências em [evidence/](evidence/)
+- Relatório de entrega preenchido
+- Pull Request aberto (conforme repositório da disciplina)
 

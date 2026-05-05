@@ -85,7 +85,7 @@ Canal assíncrono: formulário ou sistema envia **POST** para um **Webhook** do 
 ## 9. Evidências necessárias
 
 - [x] Prints do workflow ativo e de até **3 testes** (alta urgência, baixa com FAQ, entrada inválida).
-- [x] Export JSON do workflow na pasta `workflows/`.
+- [x] Export JSON do workflow na pasta `src/workflows/`.
 - [x] Planilha de exemplo com linhas de auditoria (pode ser print).
 - [x] Relatório técnico preenchido (`docs/relatorio-entrega.md`).
 

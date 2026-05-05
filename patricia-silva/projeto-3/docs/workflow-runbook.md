@@ -30,9 +30,9 @@ Siga as etapas abaixo na ordem indicada. Cada etapa deve gerar pelo menos um com
 
 ### Etapa 4: Implementar protótipos mínimos
 
-- [x] Workflow JSON referência A: `workflows/solution-a-prompt-simples.json`
-- [x] Workflow JSON referência B: `workflows/solution-b-faq-sheets.json`
-- [x] Workflow JSON referência C: `workflows/solution-c-multietapas.json`
+- [x] Workflow JSON referência A: `src/workflows/solution-a-prompt-simples.json`
+- [x] Workflow JSON referência B: `src/workflows/solution-b-faq-sheets.json`
+- [x] Workflow JSON referência C: `src/workflows/solution-c-multietapas.json`
 
 ### Etapa 5: Executar testes
 

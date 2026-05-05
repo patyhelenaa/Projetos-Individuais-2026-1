@@ -55,7 +55,7 @@ projeto-3/
 │   │   └── README.md
 │   └── solution-c/
 │       └── README.md
-├── workflows/
+├── src/workflows/
 │   ├── solution-a-prompt-simples.json
 │   ├── solution-b-faq-sheets.json
 │   └── solution-c-multietapas.json
@@ -76,7 +76,7 @@ projeto-3/
 
 Arquivo:
 
-- `workflows/solution-a-prompt-simples.json`
+- `src/workflows/solution-a-prompt-simples.json`
 
 ### Solução B — RAG leve com FAQ (escolhida)
 
@@ -87,7 +87,7 @@ Arquivo:
 
 Arquivo:
 
-- `workflows/solution-b-faq-sheets.json`
+- `src/workflows/solution-b-faq-sheets.json`
 
 ### Solução C — Multi-etapas
 
@@ -97,7 +97,7 @@ Arquivo:
 
 Arquivo:
 
-- `workflows/solution-c-multietapas.json`
+- `src/workflows/solution-c-multietapas.json`
 
 ---
 
@@ -112,12 +112,12 @@ Arquivo:
 
 ## 6. Como executar (resumo)
 
-1. Importar `workflows/solution-b-faq-sheets.json` no n8n.
+1. Importar `src/workflows/solution-b-faq-sheets.json` no n8n.
 2. Configurar Gemini (`x-goog-api-key`) nos nós HTTP.
 3. Configurar Google Sheets (OAuth2 + `Document ID`).
 4. Garantir abas:
-   - `FAQ` (`titulo`, `resposta`)
-   - `Tickets` (`timestamp`, `email`, `mensagem`, `categoria`, `urgencia`, `confianca`, `rota`, `resumo`, `orientacao`)
+  - `FAQ` (`titulo`, `resposta`)
+  - `Tickets` (`timestamp`, `email`, `mensagem`, `categoria`, `urgencia`, `confianca`, `rota`, `resumo`, `orientacao`)
 5. Executar webhook via `POST` com JSON contendo `message` (e opcionalmente `email`).
 
 ---
@@ -144,9 +144,10 @@ As evidências de execução e teste estão em:
 
 ## 9. Status final
 
-- [x] Três soluções implementadas/documentadas (A/B/C)
-- [x] Solução final escolhida e justificada (B)
-- [x] Testes e casos de teste documentados
-- [x] Evidências referenciadas
-- [x] Documentação técnica completa
-- [ ] PR final (conforme fluxo da disciplina)
+- Três soluções implementadas/documentadas (A/B/C)
+- Solução final escolhida e justificada (B)
+- Testes e casos de teste documentados
+- Evidências referenciadas
+- Documentação técnica completa
+- PR final (conforme fluxo da disciplina)
+

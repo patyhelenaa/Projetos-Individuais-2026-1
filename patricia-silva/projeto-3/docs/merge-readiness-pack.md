@@ -134,7 +134,7 @@ As evidências específicas dos testes executados estão discriminadas na **Seç
 ## 8. Instruções de execução
 
 
-1. Importar no n8n o workflow `workflows/solution-b-faq-sheets.json`.
+1. Importar no n8n o workflow `src/workflows/solution-b-faq-sheets.json`.
 2. Configurar a chave da API Gemini nos nós HTTP (`x-goog-api-key`) e manter o modelo `gemini-2.5-flash`.
 3. Configurar credencial Google Sheets e apontar o mesmo `Document ID` para:
   - leitura da aba `FAQ`;

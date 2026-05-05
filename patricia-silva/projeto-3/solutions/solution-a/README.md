@@ -6,7 +6,7 @@ A Solução A implementa a abordagem mais simples do projeto: uma única chamada
 
 Arquivo de referência:
 
-- `workflows/solution-a-prompt-simples.json`
+- `src/workflows/solution-a-prompt-simples.json`
 
 ## Como o fluxo funciona
 

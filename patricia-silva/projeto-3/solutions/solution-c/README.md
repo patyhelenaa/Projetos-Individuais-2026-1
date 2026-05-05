@@ -6,7 +6,7 @@ A Solução C foi desenhada para atender o requisito de abordagem multi-etapas. 
 
 Arquivo de referência:
 
-- `workflows/solution-c-multietapas.json`
+- `src/workflows/solution-c-multietapas.json`
 
 ## Como o fluxo funciona
 

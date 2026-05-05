@@ -6,7 +6,7 @@ A Solução B é a arquitetura escolhida para entrega final. Ela combina triagem
 
 Arquivo de referência:
 
-- `workflows/solution-b-faq-sheets.json` (solução adotada no ADR-001)
+- `src/workflows/solution-b-faq-sheets.json` (solução adotada no ADR-001)
 
 ## Como o fluxo funciona
 
